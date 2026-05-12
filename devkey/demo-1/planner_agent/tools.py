@@ -133,8 +133,8 @@ def get_maps_tools() -> list:
             }
         )
     )
-    # TODO: Add this back in after its fixed
-    return []
+
+    return [mcpToolset]
 
 
 def _load_additional_tools(skills_dir: pathlib.Path) -> list:

@@ -15,7 +15,7 @@
 
   // This automatically runs the exact Codelab setup steps every time the container starts
   // Now uv will be found perfectly on boot
-  "postStartCommand": "cd ${containerWorkspaceFolder}/devkey/demo-1 && uv venv && . .venv/bin/activate && uv sync",
+  "postStartCommand": "cd ${containerWorkspaceFolder}/devkey/demo-1 && uv venv --clear && . .venv/bin/activate && uv sync",
 
   "customizations": {
     "vscode": {

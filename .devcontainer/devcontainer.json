@@ -1,0 +1,16 @@
+{
+  "name": "ADK Agent Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  // This automatically runs the exact Codelab setup steps every time the container starts
+  "postStartCommand": "cd devkey/demo-1 && uv venv && source .venv/bin/activate && uv sync",
+
+  // Customizes terminal settings so you start in the right directory
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.cwd": "${containerWorkspaceFolder}/devkey/demo-1"
+      }
+    }
+  }
+}

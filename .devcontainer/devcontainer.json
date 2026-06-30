@@ -8,6 +8,11 @@
     "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
 
+  "containerEnv": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/workspaces/${localWorkspaceFolderBasename}/gcp_key.json",
+        "GOOGLE_CLOUD_PROJECT": "datascience-projects"
+    },
+
   // This automatically runs the exact Codelab setup steps every time the container starts
   // Now uv will be found perfectly on boot
   "postStartCommand": "cd ${containerWorkspaceFolder}/devkey/demo-1 && uv venv && . .venv/bin/activate && uv sync",

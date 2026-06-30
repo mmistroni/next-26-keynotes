@@ -4,7 +4,8 @@
 
   // Installs uv natively into the container environment first
   "features": {
-    "ghcr.io/devcontainers-contrib/features/uv:1": {}
+    "ghcr.io/devcontainers-contrib/features/uv:1": {},
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
 
   // This automatically runs the exact Codelab setup steps every time the container starts
